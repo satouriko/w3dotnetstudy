@@ -1,12 +1,29 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    var something = "interesting";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
+    <h1>ASP.NET @something</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <a class="btn btn-primary">Go to a new Controller</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <input id="new" class="form-control" value="no no no, we don't work currently!" />
+    </div>
+    <div class="col-md-4">
+        <a href="javascript: newinteresting()" class="btn btn-primary">Go to a Interesting Controller</a>
+    </div>
+</div>
+<a href="/New/Index" >NewIndex</a>
+<a href="/New/Interesting/youmaychangethisname">Interesting</a>
 
 <div class="row">
     <div class="col-md-4">
